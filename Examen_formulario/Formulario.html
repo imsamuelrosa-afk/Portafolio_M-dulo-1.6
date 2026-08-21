@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Formulario</title>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbsNDTBDQnTzCxb8sHzx28espgrN9cQEI0zbjBqmfYBvTmuiCBYvwuymB0&s=10" alt="Logo MINSAL" width="150" height="150">
+    <form>
+<fieldset>
+    <legend>Identificación del paciente</legend>
+    <style>
+        legend {
+            color: rgb(50, 104, 255);
+        }
+    </style>
+    <label for="nombre">Nombre del paciente: </label>
+    <input id="nombre" placeholder="Escriba su nombre" type="text"><br>
+    <label for="sexo">Tipo de documento: </label>
+
+    <select id="sexo">
+        <!--Etiqueta option-->
+        <option value="value1">DUI</option> 
+        <option value="value2" selected>NIT</option>
+        <option value="value2" selected>Licencia de conducir</option>
+        <option value="value2" selected>Pasaporte</option>
+    </select><br>
+    
+    <label>N° de documento: </label>
+    <input placeholder="Número sin guiones" type="text"><br>
+    <label for="email">Fecha de nacimiento: </label>
+    <input id="email" placeholder="Escriba su fecha de nacimiento" type="date"><br>
+    <label for="estudios">Sexo: </label>
+        <input type="radio" name="sexo" value="masculino"> Masculino
+        <input type="radio" name="sexo" value="femenino"> Femenino
+        <br>
+    <label for="navegador">Correo del paciente: </label>
+    <input id="correo" list="browsers" placeholder="ejemplo@empresa.com">
+    </datalist><br>
+    <label for="mensaje">N° de celular: </label>
+    <input id="mensaje" placeholder="Numero sin espacios" type="text" ><br>
+    <label for="mensaje">Observación medica del paciente: </label> <br>
+    <textarea rows="5" cols="25" placeholder="Mensaje" id="mensaje"></textarea>
+    <style>
+        textarea {
+            min-width: 300px;
+            min-height: 100px;
+            max-width: 500px;
+            max-height: 200px;
+        }
+    </style>
+    <button type="submit">Enviar</button>
+    <button type="reset">Cancelar</button>
+</fieldset>
+</form>
+</body>
+</html>
