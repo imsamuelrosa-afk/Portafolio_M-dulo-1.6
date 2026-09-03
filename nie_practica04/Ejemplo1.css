@@ -1,0 +1,20 @@
+/*Importación del tipo de letra Roboto de Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*Seleccionamos los elemento HTML*/
+body{
+  background-color: #f7fafc; /*Fondo de color , color Gris claro*/
+}
+h1 { 
+  color: orange; /*Color de letra naranja*/
+  font-family: 'Roboto', sans-serif; /*Tipo del letra Roboto*/
+  text-align: center;  /*Texto centrado */ 
+  }
+h2 { 
+  color: gray; /*Color de letra gris*/
+  font-family: 'Roboto', sans-serif; /*Tipo del letra Roboto*/
+  }
+p { 
+  color: #38a169; /*Color de letra verde, color hexadecimal*/
+  font-family: 'Roboto', sans-serif; /*Tipo del letra Roboto*/
+  text-align: justify;  /*Texto justificado */ 
+  }
