@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+
+body {
+  margin: 0;
+  background-color: #eef7f6;
+  font-family: "Roboto", sans-serif;
+}
+
+textarea {
+  min-width: 100px;
+  min-height: 150px;
+  resize: none;
+}
+
+legend {
+  color: rgb(50, 104, 255);
+}
+
+fieldset {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: white;
+  border: 2px solid rgb(50, 104, 255);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[id="edad"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[id="sexo"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[id="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(50, 104, 255);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+button[type="reset"]:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  margin: 20px auto;
+}
