@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #1a202c;
+}
+
+.margen {
+  margin: 48px;
+}
+
+.caja1,
+.caja2,
+.caja3,
+.caja4,
+.caja5,
+.caja6,
+.caja7,
+.caja8,
+.caja9 {
+  height: 32px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.caja1 {
+  width: 48px;
+  background: #edf2f7;
+}
+.caja2 {
+  width: 64px;
+  background: #e2e8f0;
+}
+.caja3 {
+  width: 80px;
+  background: #cbd5e0;
+}
+.caja4 {
+  width: 96px;
+  background: #a0aec0;
+}
+.caja5 {
+  width: 112px;
+  background: #718096;
+  color: #fff;
+}
+.caja6 {
+  width: 128px;
+  background: #4a5568;
+  color: #fff;
+}
+.caja7 {
+  width: 144px;
+  background: #2d3748;
+  color: #fff;
+}
+.caja8 {
+  width: 160px;
+  background: #1a202c;
+  color: #fff;
+}
+.caja9 {
+  width: 176px;
+  background: #171923;
+  color: #fff;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
+  width: 80px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.box1 {
+  margin-left: 8px;
+  background: #edf2f7;
+}
+.box2 {
+  margin-left: 16px;
+  background: #e2e8f0;
+}
+.box3 {
+  margin-left: 24px;
+  background: #cbd5e0;
+}
+.box4 {
+  margin-left: 32px;
+  background: #a0aec0;
+}
+.box5 {
+  margin-left: 40px;
+  background: #718096;
+  color: #fff;
+}
+.box6 {
+  margin-left: 48px;
+  background: #4a5568;
+  color: #fff;
+}
+.box7 {
+  margin-left: 56px;
+  background: #2d3748;
+  color: #fff;
+}
+.box8 {
+  margin-left: 64px;
+  background: #1a202c;
+  color: #fff;
+}
+.box9 {
+  margin-left: 72px;
+  background: #171923;
+  color: #fff;
+}
+
+.contenedor1,
+.contenedor2,
+.contenedor3,
+.contenedor4,
+.contenedor5,
+.contenedor6,
+.contenedor7,
+.contenedor8,
+.contenedor9 {
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor1 {
+  width: 260px;
+  height: 260px;
+  background: #171923;
+}
+.contenedor2 {
+  width: 236px;
+  height: 236px;
+  background: #1a202c;
+}
+.contenedor3 {
+  width: 212px;
+  height: 212px;
+  background: #2d3748;
+}
+.contenedor4 {
+  width: 188px;
+  height: 188px;
+  background: #4a5568;
+}
+.contenedor5 {
+  width: 164px;
+  height: 164px;
+  background: #718096;
+}
+.contenedor6 {
+  width: 140px;
+  height: 140px;
+  background: #a0aec0;
+}
+.contenedor7 {
+  width: 116px;
+  height: 116px;
+  background: #cbd5e0;
+}
+.contenedor8 {
+  width: 92px;
+  height: 92px;
+  background: #e2e8f0;
+}
+.contenedor9 {
+  width: 68px;
+  height: 68px;
+  background: #edf2f7;
+}
