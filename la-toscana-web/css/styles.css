@@ -1,0 +1,123 @@
+:root {
+  --rojo: #970017;
+  --rojo-oscuro: #6e0011;
+  --crema: #fbf2e1;
+  --crema-clara: #fefaf1;
+  --negro: #171717;
+  --grafito: #3d3a36;
+  --gris: #6b6560;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--grafito);
+  background: var(--crema);
+}
+
+img { display: block; max-width: 100%; }
+a { color: var(--rojo); text-decoration: none; }
+h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; color: var(--negro); }
+
+section { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+h2 { margin-bottom: 30px; font-size: 2rem; text-align: center; color: var(--rojo); }
+
+/* Encabezado del restaurante */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: var(--crema);
+  border-bottom: 3px solid var(--rojo);
+}
+header img { width: 110px; }
+nav { display: flex; gap: 18px; }
+nav a { font-size: .85rem; font-weight: 600; text-transform: uppercase; color: var(--negro); }
+nav a:hover { color: var(--rojo); }
+
+/* Presentación restaurante */
+.hero {
+  max-width: none;
+  padding: 110px 20px;
+  text-align: center;
+  color: var(--crema);
+  background: linear-gradient(rgba(110, 0, 17, .82), rgba(23, 23, 23, .86)),
+    url("../img/hero-parrillada.jpg") center / cover;
+}
+.hero h1 { font-size: 2.6rem; color: var(--crema); }
+.hero p { margin-top: 12px; }
+.lema { font-style: italic; }
+
+.btn {
+  display: inline-block;
+  margin-top: 26px;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--crema);
+  background: var(--rojo);
+  border-radius: 30px;
+  transition: background .3s ease, transform .3s ease;
+}
+.btn:hover { background: var(--rojo-oscuro); transform: translateY(-3px); }
+
+/* Tarjetas del menú */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+.card {
+  background: var(--crema-clara);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(23, 23, 23, .12);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 24px rgba(23, 23, 23, .2); }
+.card img { width: 100%; height: 180px; object-fit: cover; }
+.card h3 { margin: 16px 16px 8px; color: var(--rojo); }
+.card p { margin: 0 16px; font-size: .9rem; color: var(--gris); }
+.card span { display: block; margin: 12px 16px 16px; font-size: 1.3rem; font-weight: 700; color: var(--negro); }
+
+/* Contacto */
+.contacto { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.contacto h3 { margin-bottom: 4px; color: var(--rojo); }
+.contacto p { margin-bottom: 24px; }
+.contacto iframe { width: 100%; height: 340px; border: 0; border-radius: 8px; }
+.redes { display: flex; gap: 14px; margin-bottom: 24px; }
+.redes svg { display: block; width: 26px; height: 26px; fill: var(--gris); transition: fill .3s ease, transform .3s ease; }
+.redes a:hover svg { fill: var(--rojo); transform: scale(1.15); }
+.aviso { display: inline-block; padding: 14px 26px; color: var(--crema); background: var(--rojo); border-radius: 8px; }
+
+/* Pie de página */
+footer { padding: 28px 24px; text-align: center; color: var(--crema); background: var(--rojo-oscuro); }
+footer p { max-width: 600px; margin: 0 auto; font-size: .95rem; }
+
+/* Botón de WhatsApp */
+.wa {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 12px 22px;
+  font-weight: 600;
+  color: #fff;
+  background: #25d366;
+  border-radius: 30px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .25);
+  transition: background .3s ease, transform .3s ease;
+}
+.wa:hover { background: #128c7e; color: #fff; transform: translateY(-3px); }
+
+/* Responsivo */
+@media (max-width: 700px) {
+  header { justify-content: center; }
+  .hero { padding: 70px 20px; }
+  .hero h1 { font-size: 1.9rem; }
+  .contacto { grid-template-columns: 1fr; }
+  footer { padding-bottom: 84px; }
+}
